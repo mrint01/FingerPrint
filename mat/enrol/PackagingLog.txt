@@ -1,0 +1,108 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_redistribution" />
+  <mkdir dir="C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_testing" />
+  <mkdir dir="C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_redistribution_files_only" />
+</ant>
+mcc -C -o enrol -W WinMain:enrol -T link:exe -d 'C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_testing' -v 'C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol.m' 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+Begin validation of MEX files: Wed Jan 08 10:54:42 2020
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwbwpackc.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwbwpackctbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwbwunpackc.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwbwunpackctbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwcannythresholding_tbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwedgethinning_tbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwgrayto16.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwgrayto8.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwimreconstruct.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwint16touint16.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwipp.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwippBinder.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwippfilter.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwippgeotrans.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwippmedianfilter.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwippreconstruct.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwiptutil.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwmorphop_binary_tbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwmorphop_ipp.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwmorphop_packed.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwneighborhood.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwnhood.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwtbbhist.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\bin\win32\libmwuint16toint16.dll'.
+No conflicting MATLAB file found.
+End validation of MEX files: Wed Jan 08 10:54:42 2020
+[Warning: Adding path "C:\Users\MR-INT\Music\Documents\9raya\prog
+C\projet\fingerprint\src" to Compiler path instance.] 
+Parsing file "C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 35 temporary MEX authorization files.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc12160_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc12041_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc5584_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc10634_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc28063_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc23879_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc28040_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc9803_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc27099_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc5714_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc10600_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc27876_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc6569_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc9563_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc9521_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc29212_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc18051_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc30342_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc709_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc23907_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc4841_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc6115_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc30531_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc12646_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc5814_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc17593_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc316_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc30332_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc23314_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc21060_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc26623_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc13896_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc22700_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc22197_24572.auth'.
+Removing: 'C:\Users\MR-INT\AppData\Local\Temp\mathworks_tmp_05ffc17964_24572.auth'.
+Generating file "C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_testing\readme.txt".
+Packaging...
+Adding custom icon C:\Program Files (x86)\MATLAB\MATLAB Production Server\R2015a\toolbox\compiler\Resources\default_icon.ico to C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_testing\enrol.exe.
+Attempting to embed the CTF archive into the application C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_testing\enrol.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at C:\Users\MR-INT\Music\Documents\9raya\prog C\projet\fingerprint\src\enrol\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 4 minutes and 45 seconds.

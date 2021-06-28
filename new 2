@@ -1,0 +1,19 @@
+
+%Set preferences with setdbprefs.
+setdbprefs('DataReturnFormat', 'cellarray');
+setdbprefs('NullNumberRead', 'NaN');
+setdbprefs('NullStringRead', 'null');
+
+%Read data from database.
+conn = database('test', '', '', 'Vendor', 'MYSQL', 'Server', 'localhost', 'PortNumber', 3306);
+colnames = {'Name','Age','FID1',...
+    'FID2'};
+
+data = {name age id1 id2};
+%data = table2cell(data);
+
+data_table = cell2table(data,'VariableNames',colnames)
+tablename = 'fingerprint';
+insert(conn,tablename,colnames,data_table)
+
+close(conn);

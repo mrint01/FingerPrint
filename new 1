@@ -1,0 +1,54 @@
+
+set(hObject, 'String', 'Extracting minutiae of first finger...');
+drawnow();
+
+if path1~=0
+    minu1 = ext_finger(imread(path1));
+    minu1 = num2cell(minu1);
+    
+    colnames = {'ID','X','Y',...
+    'Type' 'Angle' 'S1' 'S2'};
+
+data = {id1 minu1(:, 1) minu1(:, 2) minu1(:, 3) minu1(:, 4) minu1(:, 5) minu1(:, 6)};
+data_table = cell2table(data,'VariableNames',colnames)
+tablename = 'minutiae';
+insert(conn,tablename,colnames,data_table);
+
+
+    %minu1 = struct('ID', id1, 'X', minu1(:, 1), 'Y', minu1(:, 2),...
+                   %'Type', minu1(:, 3), 'Angle', minu1(:, 4), ...
+                   %'S1', minu1(:, 5), 'S2', minu1(:, 6));
+end;
+
+set(hObject, 'String', 'Extracting minutiae of second finger...');
+drawnow();
+if path2~=0
+    minu2 = ext_finger(imread(path2));
+    minu2 = num2cell(minu2);
+    
+      colnames = {'ID','X','Y',...
+    'Type' 'Angle' 'S1' 'S2'};
+
+data = {id2 minu2(:, 1) minu2(:, 2) minu2(:, 3) minu2(:, 4) minu2(:, 5) minu2(:, 6)};
+data_table = cell2table(data,'VariableNames',colnames)
+tablename = 'minutiae';
+insert(conn,tablename,colnames,data_table);
+
+    %minu2 = struct('ID', id2, 'X', minu2(:, 1), 'Y', minu2(:, 2),...
+     %              'Type', minu2(:, 3), 'Angle', minu2(:, 4), ...
+      %             'S1', minu2(:, 5), 'S2', minu2(:, 6));
+end;
+
+%[r] = size(minutiae);
+%temp_struct = table2struct(minutiae);
+
+%if r == 0
+ %   temp_struct = [minu1; minu2];
+%else
+ %   temp_struct = [temp_struct; minu1; minu2];
+%end;
+
+%minutiae = struct2table(temp_struct);
+
+%save database person minutiae
+

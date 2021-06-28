@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.10 -->
+  <object class="GtkAboutDialog" id="window_help">
+    <property name="can_focus">False</property>
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">About FingerPrint</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="icon">g.ico</property>
+    <property name="type_hint">dialog</property>
+    <property name="program_name">FingerPrint 1.0</property>
+    <property name="copyright" translatable="yes">©TIC-H 2019</property>
+    <property name="comments" translatable="yes">Fingerprint program makes you login with your finger if you forget your user/password</property>
+    <property name="website">https://www.facebook.com/groups/2255741021214434/</property>
+    <property name="website_label" translatable="yes">FB/TIC-H</property>
+    <property name="logo">g.ico</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="aboutdialog-vbox1">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="close">
+            <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">center</property>
+            <signal name="notify" handler="on_window_main_destroy" swapped="no"/>
+            <signal name="button-release-event" handler="on_window_help_destroy" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_main">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Finger print</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">300</property>
+    <property name="default_height">350</property>
+    <property name="icon">g.ico</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="btn_hello">
+            <property name="label" translatable="yes">Login</property>
+            <property name="width_request">100</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_login_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">111</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry1">
+            <property name="width_request">156</property>
+            <property name="height_request">27</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">write your user</property>
+            <property name="invisible_char">●</property>
+            <property name="placeholder_text">User</property>
+          </object>
+          <packing>
+            <property name="x">87</property>
+            <property name="y">49</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry2">
+            <property name="width_request">156</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">write your password</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">●</property>
+            <property name="placeholder_text">Password</property>
+          </object>
+          <packing>
+            <property name="x">88</property>
+            <property name="y">108</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="separator1">
+            <property name="width_request">300</property>
+            <property name="height_request">1</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="app_paintable">True</property>
+            <property name="can_focus">False</property>
+            <property name="no_show_all">True</property>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">235</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_f">
+            <property name="label" translatable="yes">Login with FingerPrint</property>
+            <property name="width_request">175</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_f_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">75</property>
+            <property name="y">253</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkMenuBar" id="menubar1">
+            <property name="width_request">5</property>
+            <property name="height_request">5</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkMenuItem" id="menuitem4">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Help</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menu3">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="imagemenuitem10">
+                        <property name="label">gtk-about</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="right_justified">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                        <signal name="button-press-event" handler="on_btn_aboutclicked" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
